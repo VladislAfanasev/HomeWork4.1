@@ -49,7 +49,7 @@ public class Main {
         }
 
         int occupiedStandPlaces = 42;
-        int occupiedSeatPlaces = 13;
+        int occupiedSeatPlaces = 12;
         int allStandPlaces = 42;
         int allSeatPlaces = 60;
         int vacantStandPlaces = allStandPlaces - occupiedStandPlaces;
