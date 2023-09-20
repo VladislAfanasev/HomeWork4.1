@@ -49,18 +49,18 @@ public class Main {
         }
 
         int occupiedStandPlaces = 42;
-        int occupiedSeatPlaces = 60;
+        int occupiedSeatPlaces = 13;
         int allStandPlaces = 42;
         int allSeatPlaces = 60;
         int vacantStandPlaces = allStandPlaces - occupiedStandPlaces;
         int vacantSeatPlaces = allSeatPlaces - occupiedSeatPlaces;
-        if (vacantSeatPlaces > 0 && vacantSeatPlaces <= allSeatPlaces && vacantStandPlaces > 0 && vacantStandPlaces <= allStandPlaces) {
+        if (vacantSeatPlaces != 0 && vacantStandPlaces != 0) {
             System.out.println("В этом вагоне " + vacantSeatPlaces + " сидячих мест и " + vacantStandPlaces + " стоячих мест свободно");
         } else {
-            if (vacantSeatPlaces == 0 && vacantStandPlaces > 0 && vacantStandPlaces<= allStandPlaces) {
+            if (vacantSeatPlaces == 0 && vacantStandPlaces != 0) {
                 System.out.println("В этом вагоне свободно " + vacantStandPlaces + " стоячих мест. Сидячие места раскуплены");
             } else {
-                if (vacantStandPlaces == 0 && vacantSeatPlaces > 0 && vacantSeatPlaces <= allSeatPlaces) {
+                if (vacantStandPlaces == 0 && vacantSeatPlaces != 0) {
                     System.out.println("В этом вагоне свободно " + vacantSeatPlaces + " сидячих мест. Стоячие места раскуплены");
                 } else {
                     System.out.println("В этом вагоне нет свободных мест");
